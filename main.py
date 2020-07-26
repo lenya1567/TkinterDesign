@@ -78,3 +78,9 @@ def run(*objs):
 
     return finalCode
 
+class export:
+  Page = Page
+  run = run
+
+def main():
+  return export()
