@@ -92,6 +92,7 @@ def run(*objs):
 class export:
   Page = Page
   run = run
+  PassParams = PassParams
 
 def main():
   return export()
