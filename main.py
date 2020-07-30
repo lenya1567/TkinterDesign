@@ -1,5 +1,16 @@
 import tkinter as tk
 
+def PassParams(initVars, view, btn1, btn2, btn3, tf, globalVars):
+    return {
+        "vars": initVars,
+        "view": view,
+        "Btn1": btn1,
+        "Btn2": btn2,
+        "Btn3": btn3,
+        "KeyB": tf,
+        "global": globalVars
+    }
+
 class Page():
     def __init__(self, name):
         self.name_cur = name
