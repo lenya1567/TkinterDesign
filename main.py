@@ -1,6 +1,6 @@
 import tkinter as tk
 
-def PassParams(initVars, view, btn1, btn2, btn3, tf, globalVars):
+def PassParams(self, initVars, view, btn1, btn2, btn3, tf, globalVars):
     return {
         "vars": initVars,
         "view": view,
