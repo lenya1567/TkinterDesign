@@ -18,7 +18,7 @@ class Page():
     def add(self, body):
         self.body += [body]
 
-def run(*objs):
+def run(prefs, *objs):
 
     initVars = ""
     view = ""
@@ -53,6 +53,8 @@ def run(*objs):
     finalCode += "canvas = tkinter.Canvas(root, width=1020, height=800)\n"
     finalCode += f"\nurl = '{objs[0].name_cur}'\n"
     finalCode += f"\nscreen_action = 'PUSH'\n\n"
+    for e in prefs:
+        finalCode += f"\n{e} = '{prefs[e]}'\n"
     finalCode += f"{initVars}\n"
     finalCode += f"{view}"
 
